@@ -1,0 +1,31 @@
+
+.search{
+  display: flex;
+ 
+  align-items: center;
+  background-color: $secondary;
+  border-radius: 3rem;
+  color: $light-text;
+  padding: $padding-sm $base-padding;
+  // transition: all .5s ease-in;
+  margin-left: $base-margin;
+  width: 30rem;
+  @include mobile {
+    width: 100%;
+    margin-left: 0;
+    order: 10;
+  }
+  input{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    flex: 1;
+    margin-left: $margin-sm;
+    color: $light-text;
+  }
+
+  .icon:first-child{
+    color: $light-text;
+  }
+
+}

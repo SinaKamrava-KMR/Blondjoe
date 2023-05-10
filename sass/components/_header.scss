@@ -1,0 +1,31 @@
+
+header{
+  width: 100%;
+  min-height: 75px;
+  transition: all .5s ease-in;
+  background-color: $main-bg;
+  @include mobile {
+    min-height:120px;
+  }
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.coin{
+  display: flex;
+  gap: .5rem;
+  padding: $padding-sm $padding-md;
+  background-color: $blue-low-opacity;
+  color: $primary-light;
+  border-radius: 2rem;
+  font-size: $base-font;
+  .icon{
+    color: $primary-light;
+  }
+
+
+}
+
+

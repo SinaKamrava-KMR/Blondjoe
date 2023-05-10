@@ -1,0 +1,191 @@
+
+
+.channel-profile{
+  position: relative;
+  background-color: $secondary-dark;
+  border-radius: 10px;
+  padding: $base-padding;
+  // min-width: 20rem;
+  width: 20rem;
+  display: flex;
+  
+  flex-direction: column;
+  
+.options{
+  display: none;
+  position: absolute;
+  top: -12px;
+  right: 5px;
+  border-radius: 50%;
+  padding: $padding-sm*.5;
+  padding-inline: $padding-sm;
+  background-color: $success-dark;
+  color: white;
+  font-size: $base-font;
+  &:first-child{
+    right: 40px;
+  }
+  @include breake-point(1251px) {
+    display: block;
+  }
+  
+}
+
+
+
+  @include breake-point(500px) {
+    width: 100%;
+  }
+  @include breake-point(826px) {
+    max-width: 30rem;
+    width: 100%;
+  }
+
+  .img-wrapper{
+    border-radius: 10px;
+    width: 100%;
+    min-height: 7rem;
+    // height: 50%;
+    // @include breake-point(1119px) {
+    //   min-height: 10rem;
+    // }
+  }
+
+  .channel__name{
+    display: flex;
+    align-items: center;
+    margin-block: 10px;
+    font-size: $base-font;
+    gap: 10px;
+  
+    .icon{
+      color: $primary ;
+    }
+
+    .circle{
+      width: 5px;
+      height: 5px;
+      border-radius: 50px;
+      margin-top: $margin-sm * .3;
+      transform: translateX(5px);
+      background-color: $success;
+    }
+    p:last-child{
+      color: $success;
+    }
+ 
+  }
+}
+
+.channel-details{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .channel__info{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+   
+    gap: 1rem;
+    font-size: $base-font;
+    
+    .resume{
+      flex: 1;
+      background-color: $secondary;
+      border-radius: .3rem;
+      padding: $base-padding;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      min-width: 15rem;
+      
+
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+      }
+
+      .item{
+        i{
+          margin-right: $margin-sm;
+        }
+        margin-bottom: $margin-sm;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
+        .value{
+          color: $primary-light
+        }
+
+        .substr{
+          color: lighten($secondary-light,20%);
+        }
+      }
+    }
+
+
+    .options{
+     
+      border-radius: .3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: $padding-sm;
+      background-color: darken($success,15%);
+      gap: 10px;
+      @include breake-point(1251px) {
+        display: none;
+      }
+      p{
+        font-size: $base-font*1.2;
+        text-align: center;
+      }
+      i{
+        font-size: $font-md;
+      }
+    }
+
+
+  }
+
+  .channel__social{
+    // flex: 1;
+    padding-inline: $padding-md;
+    padding-block: $padding-sm;
+    background-color: $secondary;
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .item{
+      cursor: pointer;
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background-color: cadetblue;
+      gap: 1rem;
+      color: lighten($secondary-light,10%);
+      @include breake-point(1102px) {
+        font-size: $font-md;
+      }
+      p{
+        @include breake-point(1102px) {
+          display: none;
+        }
+      }
+    }
+
+    .line-v{
+      background-color: darken($secondary-light,10%);
+    }
+    
+  }
+
+}

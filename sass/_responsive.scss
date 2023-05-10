@@ -1,0 +1,15 @@
+
+
+#menu {
+  .icon-wrapper,.line-v,.icon,.img-wrapper{
+    @include breake-point($header-point){
+      display: none;
+    }
+  }
+
+  .menu-icon{
+    @include breake-point($header-point){
+      display: block;
+    }
+  }
+}
