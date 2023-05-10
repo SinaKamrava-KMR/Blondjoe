@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blondjoe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+<!-- header-start -->
+  <header class="header flex items-center">
+    <div class="wrapper flex items-center gap-2">
+
+      <h2>Blon<span class="italic blue-txt">djoe</span></h2>
+      <div class="search">
+        <span class="icon"><i class="bi bi-search"></i></span>
+        <input id="search-input" type="text" placeholder="search">
+        <span class="icon"><i class="bi bi-sliders"></i></span>
+      </div>
+
+
+      <div class="coin">
+        <span class="icon"><i class="bi bi-currency-exchange"></i></span>
+        <p>coin <span id="price">2,500,782.00</span></p>
+      </div>
+
+      <div class="flex-1"></div>
+
+      <div id="menu" class="flex items-center gap-2">
+        <span class="menu-icon"><i class="bi bi-list"></i></span>
+        <div class="icon-wrapper">
+          <span class="icon"><i class="bi bi-bag-fill"></i></span>
+        </div>
+        <div class="icon-wrapper">
+          <span class="icon"><i class="bi bi-heart-fill"></i></span>
+        </div>
+        <div class="icon-wrapper">
+          <span class="icon-tag"></span>
+          <span class="icon"><i class="bi bi-bell-fill"></i></span>
+        </div>
+  
+        <span class="line-v"></span>
+  
+        <span class="icon"><i class="bi bi-grid-fill"></i></span>
+  
+        <div class="img-wrapper">
+          <img class="w-100 h-100 obj-cover" src="./images/user5.jpg" alt="profile image">
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- header- end -->
+
+  <!-- category start  -->
+  <section class="nav-category">
+    <div class="category-wrapper">
+      <span class="tag tagActive">
+        <i>👛</i>
+        <p>Ransel</p>
+      </span>
+      <span class="tag">
+        <i>👢</i>
+        <p>Shoes</p>
+      </span>
+      <span class="tag">
+        <i>👠</i>
+        <p>High Heels</p>
+      </span>
+      <span class="tag">
+        <i>🧦</i>
+        <p>Socks</p>
+      </span>
+      <span class="tag">
+        <i>👖</i>
+        <p>Pants</p>
+      </span>
+      <span class="tag">
+        <i>👕</i>
+        <p>T-Shirt</p>
+      </span>
+      <span class="tag">
+        <i>👗</i>
+        <p>Dress</p>
+      </span>
+      <span class="tag">
+        <i>👙</i>
+        <p>Underwear</p>
+      </span>
+      <span class="tag">
+        <i>🍙</i>
+        <p>Vinyl</p>
+      </span>
+      <span class="tag">
+        <i>💇</i>
+        <p>Hair Care</p>
+      </span>
+      <span class="tag">
+        <i>💅</i>
+        <p>Skin Care</p>
+      </span>
+      <span class="tag">
+        <i>💍</i>
+        <p>Jewellery</p>
+      </span>
+      <span class="tag">
+        <i>📗</i>
+        <p>Books</p>
+      </span>
+      <span class="tag">
+        <i>🍙</i>
+        <p>Vinyl</p>
+      </span>
+
+    </div>
+  </section>
+  <!-- category end -->
+
+  <!-- main start -->
+  <section class="flex wrapper ">
+
+    <section class="filter">
+      <div class="filter-wrapper">
+        <div class="title ">
+          <p>Category</p>
+          <span class="icon"><i class="bi bi-chevron-down"></i></span>
+        </div>
+
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p>Cleanser</p>
+        </div>
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p>Toner</p>
+        </div>
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p>Serum</p>
+        </div>
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p>Moisturizer</p>
+        </div>
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p>Face mask</p>
+        </div>
+
+        <a>
+          <span>load more</span>
+          <i class="bi bi-plus"></i>
+        </a>
+
+      </div>
+      <div class="filter-wrapper">
+        <div class="title ">
+          <p>Price</p>
+          <span class="icon"><i class="bi bi-chevron-down"></i></span>
+        </div>
+
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p>High to low</p>
+        </div>
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p>Low to high</p>
+        </div>
+
+
+        <a>
+          <span>load more</span>
+          <i class="bi bi-plus"></i>
+        </a>
+
+      </div>
+
+      <div class="filter-wrapper">
+        <div class="title ">
+          <p>Locations</p>
+          <span class="icon"><i class="bi bi-chevron-down"></i></span>
+        </div>
+
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p> Nearest</p>
+        </div>
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p>Farthest</p>
+        </div>
+
+
+        <a>
+          <span>load more</span>
+          <i class="bi bi-plus"></i>
+        </a>
+
+      </div>
+
+      <div class="filter-wrapper">
+        <div class="title ">
+          <p>Rating</p>
+          <span class="icon"><i class="bi bi-chevron-down"></i></span>
+        </div>
+
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p> Highest</p>
+        </div>
+        <div class="items">
+          <input type="checkbox" class="checkbox">
+          <p>Lowest</p>
+        </div>
+
+
+        <a>
+          <span>load more</span>
+          <i class="bi bi-plus"></i>
+        </a>
+
+      </div>
+    </section>
+
+
+    <section class="main">
+      <div class="roter">
+        <p>Home</p>
+        <i class="bi bi-chevron-compact-right"></i>
+        <p>Cleanizer</p>
+        <i class="bi bi-chevron-compact-right"></i>
+        <span class="icon"><i class="bi bi-basket-fill"></i></span>
+        <p>Mawar shop official</p>
+      </div>
+
+      <div class="flex justify-center gap-2">
+        <div class="channel-profile">
+          <span class="options"> <i class="bi bi-gift-fill"></i></span>
+          <span class="options"><i class="bi bi-hand-thumbs-up-fill"></i>
+          </span>
+          <div class="img-wrapper">
+            <img src="images/p.jpg" alt="">
+          </div>
+          <div class="channel__name">
+            <i class="bi bi-basket-fill"></i>
+            <p>Mawar shop official</p>
+           <span class="icon"> <i class="bi bi-check-circle-fill"></i></span>
+            <span class="flex-1"></span>
+
+            <span class="circle"></span>
+            <p>online</p>
+
+          </div>
+          <span class="flex-1"></span>
+          <div class="contact-btns">
+            <div  class="follow">
+              <p>Follow</p>
+              <span class="icon"><i class="bi bi-plus"></i></span>
+            </div>
+            <div  class="chat">
+              <p>Chat</p>
+              <span class="icon"><i class="bi bi-chat-text"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="channel-details">
+          
+          <div class="channel__info">
+            <div class="resume">
+              <div>
+                <span class="item">
+                  <span class="icon"><i class="bi bi-kanban"></i></span>
+                  <p>products :</p>
+                  <p class="value">600</p>
+                </span>
+                <span class="item">
+                  <span class="icon"><i class="bi bi-people"></i></span>
+                  <p>Followers :</p>
+                  <p class="value">40.5k</p>
+                </span>
+                <span class="item">
+                  <span class="icon"><i class="bi bi-person-check"></i></span>
+                  <p>Following :</p>
+                  <p class="value">1.5k</p>
+                </span>
+              </div>
+
+              <div>
+                
+              <span class="item">
+                <span class="icon"><i class="bi bi-star"></i></span>
+                <p>Rating :</p>
+                <p class="value">4.9</p>
+                <span class="substr">(30.2k reviews)</span>
+              </span>
+              <span class="item">
+                <span class="icon"><i class="bi bi-chat-dots"></i></span>
+                <p>Chat Performance :</p>
+                <p class="value">93%</p>
+                <span class="substr">(within hours)</span>
+              </span>
+              <span class="item">
+                <span class="icon"><i class="bi bi-person-down"></i></span>
+                <p>Joined :</p>
+                <p class="value">4 years ago</p>
+                
+              </span>
+             
+              </div>
+            </div>
+
+            <div class="options">
+              <p>Awards for top shop</p>
+              <i class="bi bi-gift-fill"></i>
+            </div>
+            <div class="options">
+              <p>Best seller of the year</p>
+              <i class="bi bi-hand-thumbs-up-fill"></i>
+            </div>
+          </div>
+
+          <div class="channel__social">
+            <span class="item">
+              <i class="bi bi-whatsapp"></i>
+              <p>+68 981 723 9012</p>
+            </span>
+            <span class="line-v"></span>
+            <span class="item">
+              <i class="bi bi-instagram"></i>
+              <p>@mvlimba</p>
+            </span>
+            <span class="line-v"></span>
+            <span class="item">
+              <i class="bi bi-facebook"></i>
+              <p>mvlimba</p>
+            </span>
+            <span class="line-v"></span>
+            <span class="item">
+              <i class="bi bi-youtube"></i>
+              <p>reviewmvlimba</p>
+            </span>
+         
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div id="tabs-wraperr" class="tabs">
+        <span class="line"></span>
+        <p class="active item">All products</p>
+        <p class="item"> Top Sales</p>
+        <p class="item"> Promo </p>
+        <p class="item"> La Crystal </p>
+        <p class="item"> Cleanizer  </p>
+        <p class="item"> El Tonerb  </p>
+        <p class="item"> Serumb </p>
+
+       <span class="select-wrapper">
+        <span class="icon"><i class="bi bi-caret-down-fill"></i></span>
+        <select> 
+          <option value="More" selected>More</option>
+          <option value="Experiance">Experiance</option>
+          <option value="Low Rate">Low Rate</option>
+        </select>
+       </span>
+
+      </div>
+
+
+      <div class="products-wrapper">
+
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="images/product.jpg" alt="product">
+          </div>
+
+          <span class="rate">
+            <i class="bi bi-star-fill"></i>
+            <p>4.9</p>
+          </span>
+
+          <div class="card-info">
+            <div class="flex justify-between">
+              <p class="title">Tarolasix Plotakov</p>
+              <p>$50.<span class="float-number">24</span> </p>
+            </div>
+
+            <div class="flex justify-between gap-2 items-center">
+              <p class="subtitle">Tarolasix Plotakov floraz topics hulu konztrak litixc <span>read more</span></p>
+
+              <span class="card-btn">Buy</span>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="images/pro2.jpg" alt="product">
+          </div>
+
+          <span class="rate">
+            <i class="bi bi-star-fill"></i>
+            <p>3.2</p>
+          </span>
+
+          <div class="card-info">
+            <div class="flex justify-between">
+              <p class="title">Tarolasix Plotakov</p>
+              <p>$50.<span class="float-number">24</span> </p>
+            </div>
+
+            <div class="flex justify-between gap-2 items-center">
+              <p class="subtitle">Tarolasix Plotakov floraz topics hulu konztrak litixc <span>read more</span></p>
+
+              <span class="card-btn">Buy</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="images/pro3.jpg" alt="product">
+          </div>
+
+          <span class="rate">
+            <i class="bi bi-star-fill"></i>
+            <p>4.9</p>
+          </span>
+
+          <div class="card-info">
+            <div class="flex justify-between">
+              <p class="title">Tarolasix Plotakov</p>
+              <p>$50.<span class="float-number">24</span> </p>
+            </div>
+
+            <div class="flex justify-between gap-2 items-center">
+              <p class="subtitle">Tarolasix Plotakov floraz topics hulu konztrak litixc <span>read more</span></p>
+
+              <span class="card-btn">Buy</span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="images/pro4.jpg" alt="product">
+          </div>
+
+          <span class="rate">
+            <i class="bi bi-star-fill"></i>
+            <p>4.9</p>
+          </span>
+
+          <div class="card-info">
+            <div class="flex justify-between">
+              <p class="title">Tarolasix Plotakov</p>
+              <p>$50.<span class="float-number">24</span> </p>
+            </div>
+
+            <div class="flex justify-between gap-2 items-center">
+              <p class="subtitle">Tarolasix Plotakov floraz topics hulu konztrak litixc <span>read more</span></p>
+
+              <span class="card-btn">Buy</span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="images/pro5.jpg" alt="product">
+          </div>
+
+          <span class="rate">
+            <i class="bi bi-star-fill"></i>
+            <p>4.9</p>
+          </span>
+
+          <div class="card-info">
+            <div class="flex justify-between">
+              <p class="title">Tarolasix Plotakov</p>
+              <p>$50.<span class="float-number">24</span> </p>
+            </div>
+
+            <div class="flex justify-between gap-2 items-center">
+              <p class="subtitle">Tarolasix Plotakov floraz topics hulu konztrak litixc <span>read more</span></p>
+
+              <span class="card-btn">Buy</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="images/pro6.jpg" alt="product">
+          </div>
+
+          <span class="rate">
+            <i class="bi bi-star-fill"></i>
+            <p>4.9</p>
+          </span>
+
+          <div class="card-info">
+            <div class="flex justify-between">
+              <p class="title">Tarolasix Plotakov</p>
+              <p>$50.<span class="float-number">24</span> </p>
+            </div>
+
+            <div class="flex justify-between gap-2 items-center">
+              <p class="subtitle">Tarolasix Plotakov floraz topics hulu konztrak litixc <span>read more</span></p>
+
+              <span class="card-btn">Buy</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="images/product.jpg" alt="product">
+          </div>
+
+          <span class="rate">
+            <i class="bi bi-star-fill"></i>
+            <p>4.9</p>
+          </span>
+
+          <div class="card-info">
+            <div class="flex justify-between">
+              <p class="title">Tarolasix Plotakov</p>
+              <p>$50.<span class="float-number">24</span> </p>
+            </div>
+
+            <div class="flex justify-between gap-2 items-center">
+              <p class="subtitle">Tarolasix Plotakov floraz topics hulu konztrak litixc <span>read more</span></p>
+
+              <span class="card-btn">Buy</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="images/pro2.jpg" alt="product">
+          </div>
+
+          <span class="rate">
+            <i class="bi bi-star-fill"></i>
+            <p>4.9</p>
+          </span>
+
+          <div class="card-info">
+            <div class="flex justify-between">
+              <p class="title">Tarolasix Plotakov</p>
+              <p>$50.<span class="float-number">24</span> </p>
+            </div>
+
+            <div class="flex justify-between gap-2 items-center">
+              <p class="subtitle">Tarolasix Plotakov floraz topics hulu konztrak litixc <span>read more</span></p>
+
+              <span class="card-btn">Buy</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+
+
+
+  </section>
+
+  <!-- main end -->
+
+
+
+  <script src="scripts/uiscript.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

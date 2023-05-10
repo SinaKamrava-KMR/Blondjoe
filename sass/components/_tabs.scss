@@ -1,0 +1,64 @@
+.tabs{
+
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  border-bottom: $border;
+  padding-block: $base-padding;
+  color: $secondary-light;
+  position: relative;
+  .active{
+    color: $light-text;
+  }
+.item{
+  cursor: pointer;
+}
+  .item:nth-child(8){
+    
+    @include breake-point(988px) {
+      display: none;
+    }
+  }
+  .item:nth-child(7){
+    
+    @include breake-point(812px) {
+      display: none;
+    }
+  }
+  .item:nth-child(6){
+    
+    @include breake-point(704px) {
+      display: none;
+    }
+  }
+  .item:nth-child(5){
+    
+    @include breake-point(670px) {
+      display: none;
+    }
+  }
+
+  .line{
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 15%;
+    transition: all .5s ease-in-out;
+        
+    @include breake-point(904px) {
+      width: 16%;
+    }
+    @include breake-point(794px) {
+      width: 18%;
+    }
+    @include breake-point(694px) {
+      width: 20%;
+    }
+    @include breake-point(658px) {
+      width: 26%;
+    }
+    background-color: $primary;
+  }
+}

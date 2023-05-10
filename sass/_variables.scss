@@ -1,0 +1,54 @@
+
+// colors
+$main-bg : #0c0c17;
+$primary : #1c80eb;
+$primary-light : #5ea8f8;
+$primary-dark : #1471d4;
+
+$secondary :#2d2c34;
+$secondary-light :#4d4f5d;
+$secondary-dark :rgb(39, 40, 47);
+
+
+$light-text :rgb(241, 241, 241);
+
+$success:rgb(10, 225, 110);
+$success-light:rgb(27, 243, 128);
+$success-dark:rgb(7, 196, 96);
+
+$icon-color :$secondary-dark;
+$blue-low-opacity:#6693c223;
+$blue-text:#0a5eb8;
+$chat-btn:#023e7e26;
+
+//fonts
+
+$base-font :.80rem;
+$font-sm :$base-font * .5;
+$font-md :$base-font * 1.5;
+$font-lg :$base-font * 2;
+$font-xl :$base-font * 3;
+$font-xxl :$base-font * 4;
+
+
+//sizing
+
+$base-padding:1rem;
+
+$padding-sm:$base-padding*.5;
+$padding-md:$base-padding*1.5;
+$padding-lg:$base-padding*2;
+$padding-xl:$base-padding*3;
+$padding-xxl:$base-padding*4;
+
+$base-margin:1rem;
+
+$margin-sm:$base-margin*.5;
+$margin-md:$base-margin*1.5;
+$margin-lg:$base-margin*2;
+$margin-xl:$base-margin*3;
+$margin-xxl:$base-margin*4;
+
+// border
+
+$border:1px solid $secondary-dark;

@@ -1,0 +1,25 @@
+
+@mixin mobile{
+  @media (max-width:$md) {
+    @content
+  }
+};
+
+@mixin tablet{
+  @media (max-width:$xl) {
+    @content
+  }
+};
+
+@mixin desktop{
+  @media (max-width:$xxl) {
+    @content
+  }
+};
+
+
+@mixin breake-point($point){
+  @media (max-width:$point) {
+    @content
+  }
+}
