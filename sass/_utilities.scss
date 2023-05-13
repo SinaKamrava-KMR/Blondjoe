@@ -1,0 +1,189 @@
+
+
+.wrapper{
+  width: 96%;
+  margin-inline: auto;
+  transition: all .5s ease-in;
+  @include tablet(){
+    width: 98%;
+  }
+}
+.overflow-h{
+  overflow-y: hidden;
+}
+.gap-2{
+  gap: 1rem;
+}
+.italic{
+  font-style: italic;
+}
+
+.blue-txt{
+  color: $blue-text;
+}
+
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+.justify-start{
+  justify-content: flex-start;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-line{
+  justify-content: baseline;
+}
+
+.items-end{
+  align-items: flex-end;
+}
+
+.items-start{
+  align-items: flex-start;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.icon{
+  color: $secondary-light;
+  cursor: pointer;
+}
+
+.flex-1{
+  flex-grow: 1;
+}
+
+.icon-wrapper{
+  background-color: $secondary;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
+  .icon{
+    color: $light-text;
+  }
+  &:hover{
+    background-color: $secondary-dark;
+  }
+
+  .icon-tag{
+    position: absolute;
+    right: .6rem;
+    top: .6rem;
+    width: .6rem;
+    height: .6rem;
+    border-radius: 100%;
+    border: 2px solid $secondary;
+    background-color: crimson;
+  }
+}
+
+.line-v{
+  width: 1px;
+  height: 50px;
+  display: block;
+  background-color: $secondary-dark;
+}
+.line-h{
+  border: $border;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: $secondary-dark;
+}
+
+
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100%;
+}
+.h-full{
+  min-height: 100vh;
+}
+
+.obj-cover{
+  object-fit: cover;
+}
+
+.img-wrapper{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  overflow: hidden;
+
+}
+
+.menu-icon{
+  color: $light-text;
+  font-size: 1.5rem;
+  display: none;
+  margin-right: $base-margin;
+}
+
+.roter{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  // white-space: nowrap;
+  i:not(:last-child){
+   
+    color: $secondary-light;
+    padding-top: 2px;
+    @include mobile {
+      display: none;
+     }
+  }
+
+  p:not(:last-child){
+    @include mobile {
+     display: none;
+    }
+    color: rgb(167, 167, 167);
+  }
+  .icon i{
+  
+    color: #fff;
+  }
+}
+
+select{
+  appearance: none;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  color: $secondary-light;
+
+
+}
+
+.select-wrapper{
+  position: relative;
+ 
+  .icon{
+    
+    position: absolute;
+    top: 3px;
+    // margin-right: 10px;
+    right: 10px;
+   }
+}
+
+.justify-between{
+  justify-content: space-between;
+}

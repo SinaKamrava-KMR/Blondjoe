@@ -1,0 +1,90 @@
+.main{
+  flex: 1;
+  padding-block: .7rem;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  // overflow-y: hidden;
+  gap: 1.5rem;
+  border-left: $border;
+  height: fit-content;
+  @include mobile {
+    padding-right: 1.2rem;
+  }
+
+}
+
+.filter{
+  position: sticky;
+  top: 100px;
+ 
+
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  padding-block: .5rem;
+  max-width: 12rem;
+  max-height: 500px;
+  width: 100%;
+  transition: all .5s ease-in;
+  overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  @include mobile {
+    max-width: 8rem;
+    padding-left: $padding-sm;
+  }
+ 
+  .filter-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .title{
+      cursor: pointer;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      span{
+        display: block;
+        padding-top: $padding-sm;
+        
+       
+      }
+
+      &.clicked ~ .items {
+        display: none;
+      }
+
+      &.clicked ~ a{
+        display: none;
+      }
+
+    }
+
+    .items{
+      transition: all .5s ease-in;
+      transform: translateY(0px);
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: $base-font *1.2;
+      color: #929292;
+
+    }
+
+    a{
+      color: $primary-light ;
+      display: flex;
+      align-items: center;
+      font-size: $base-font*.96;
+      cursor: pointer;
+      i{
+        padding-top: $padding-sm*.3;
+      }
+    }
+  }
+
+
+}

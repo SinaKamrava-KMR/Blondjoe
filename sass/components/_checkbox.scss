@@ -1,0 +1,45 @@
+.checkbox{
+  all: unset;
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 3px;
+  background-color: $secondary ;
+  outline: 0 ;
+  border: 0;
+
+  &:checked{
+    background-color: $primary-light;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 9px;
+      background-color: $secondary;
+      left: 11px;
+      top: 5px;
+      transform: rotate(45deg);
+    }
+
+    &::before{
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 5px;
+      background-color: $secondary;
+    
+      left: 6px;
+      top: 9px;
+      transform: rotate(-45deg);
+    }
+
+    ~p{
+      color: $light-text;
+    }
+    
+  }
+
+  
+
+}

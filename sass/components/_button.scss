@@ -1,0 +1,62 @@
+.contact-btns{
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  font-size: $base-font;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  .follow{
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    background-color: $primary;
+    border-radius: 50px;
+    padding-inline: $padding-md;
+    padding-block: 5px;
+    &:hover{
+  
+      background-color: darken($primary,10%);
+    }
+    .icon{
+      color: white;
+      margin-top: $margin-sm*.3;
+    }
+  }
+
+  .chat{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    background-color: $chat-btn;
+    border-radius: 50px;
+    padding-inline: $padding-md;
+    border: 1px solid $blue-text;
+    padding-block: 5px;
+    color: $blue-text;
+    &:hover{
+      background-color: lighten($chat-btn,20%);
+    }
+    .icon{
+      color: $blue-text;
+      margin-top: $margin-sm*.3;
+    }
+  }
+}
+
+.card-btn{
+  background-color: $blue-text;
+  color: $light-text;
+  padding-inline: $padding-sm;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover{
+    background-color: darken($blue-text,10%);
+  }
+}
